@@ -1,0 +1,32 @@
+language: php
+dist: trusty
+
+
+addons:
+  apt:
+    sources:
+      - mysql-5.7-trusty
+    packages:
+      - mysql-server
+      - mysql-client
+
+before_install:
+  - sudo service mysql restart
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS r2t;'
+
+php:
+  - '7.2'
+
+service:
+  - mysql
+  - redis-server
+
+
+install:
+  - cp .env.example .env
+
+  - travis_retry composer install --no-interaction --no-suggest
+  - php artisan key:generate --ansi
+  - php artisan vendor:publish --all --force
+  - php artisan migrate
+  - php artisan db:seed --class=DatabaseSeeder
