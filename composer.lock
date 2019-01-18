@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "72adaacabb7b893338a91a061f53e6ad",
+    "content-hash": "0384506669e31f92cc84d2b97bc35f2f",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1513,16 +1513,16 @@
         },
         {
             "name": "ichynul/configx",
-            "version": "0.0.2",
+            "version": "0.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ichynul/configx.git",
-                "reference": "a969dd2faf2c4b807f0544f5f5d6d3c5b3d680a3"
+                "reference": "ad288dbb42e51bf30b7daaaee9be1a95e0c065e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ichynul/configx/zipball/a969dd2faf2c4b807f0544f5f5d6d3c5b3d680a3",
-                "reference": "a969dd2faf2c4b807f0544f5f5d6d3c5b3d680a3",
+                "url": "https://api.github.com/repos/ichynul/configx/zipball/ad288dbb42e51bf30b7daaaee9be1a95e0c065e8",
+                "reference": "ad288dbb42e51bf30b7daaaee9be1a95e0c065e8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1568,7 +1568,7 @@
                 "extension",
                 "laravel-admin"
             ],
-            "time": "2018-12-12T14:23:21+00:00"
+            "time": "2019-01-17T02:45:32+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -8275,7 +8275,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "ext-json": "^1.6"
     },
     "platform-dev": []
 }

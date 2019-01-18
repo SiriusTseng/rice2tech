@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => 'Laravel-admin',
+    'name'                      => 'rice2tech',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Laravel</b> admin',
+    'logo'                      => 'rice2tech',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini'                 => '<b>R2T</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -46,7 +46,7 @@ return [
     | access through the root path, just set the prefix to empty string.
     |
     */
-    'route' => [
+    'route'                     => [
 
         'prefix' => 'admin',
 
@@ -65,7 +65,7 @@ return [
     | be set before running `artisan admin::install` to take effect.
     |
     */
-    'directory' => app_path('Admin'),
+    'directory'                 => app_path('Admin'),
 
     /*
     |--------------------------------------------------------------------------
@@ -75,7 +75,7 @@ return [
     | Html title for all pages.
     |
     */
-    'title' => 'Admin',
+    'title'                     => 'Admin',
 
     /*
     |--------------------------------------------------------------------------
@@ -85,7 +85,7 @@ return [
     | If your page is going to be accessed via https, set it to `true`.
     |
     */
-    'https' => env('ADMIN_HTTPS', false),
+    'https'                     => env('ADMIN_HTTPS', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -98,7 +98,7 @@ return [
     | You can specify a controller for `login` `logout` and other auth routes.
     |
     */
-    'auth' => [
+    'auth'                      => [
 
         'controller' => App\Admin\Controllers\AuthController::class,
 
@@ -126,10 +126,10 @@ return [
     | disk and upload path.
     |
     */
-    'upload' => [
+    'upload'                    => [
 
         // Disk in `config/filesystem.php`.
-        'disk' => 'admin',
+        'disk'      => 'admin',
 
         // Image and file upload path under the disk above.
         'directory' => [
@@ -146,26 +146,26 @@ return [
     | Here are database settings for laravel-admin builtin model & tables.
     |
     */
-    'database' => [
+    'database'                  => [
 
         // Database connection for following tables.
-        'connection' => '',
+        'connection'             => '',
 
         // User tables and model.
-        'users_table' => 'admin_users',
-        'users_model' => Encore\Admin\Auth\Database\Administrator::class,
+        'users_table'            => 'admin_users',
+        'users_model'            => Encore\Admin\Auth\Database\Administrator::class,
 
         // Role table and model.
-        'roles_table' => 'admin_roles',
-        'roles_model' => Encore\Admin\Auth\Database\Role::class,
+        'roles_table'            => 'admin_roles',
+        'roles_model'            => Encore\Admin\Auth\Database\Role::class,
 
         // Permission table and model.
-        'permissions_table' => 'admin_permissions',
-        'permissions_model' => Encore\Admin\Auth\Database\Permission::class,
+        'permissions_table'      => 'admin_permissions',
+        'permissions_model'      => Encore\Admin\Auth\Database\Permission::class,
 
         // Menu table and model.
-        'menu_table' => 'admin_menu',
-        'menu_model' => Encore\Admin\Auth\Database\Menu::class,
+        'menu_table'             => 'admin_menu',
+        'menu_model'             => Encore\Admin\Auth\Database\Menu::class,
 
         // Pivot table for table above.
         'operation_log_table'    => 'admin_operation_log',
@@ -183,9 +183,9 @@ return [
     | By setting this option to open or close operation log in laravel-admin.
     |
     */
-    'operation_log' => [
+    'operation_log'             => [
 
-        'enable' => true,
+        'enable'          => true,
 
         /*
          * Only logging allowed methods in the list
@@ -198,7 +198,7 @@ return [
          * All method to path like: admin/auth/logs
          * or specific method to path like: get:admin/auth/logs.
          */
-        'except' => [
+        'except'          => [
             'admin/auth/logs*',
         ],
     ],
@@ -211,7 +211,7 @@ return [
     | Supported: "tencent", "google", "yandex".
     |
     */
-    'map_provider' => 'google',
+    'map_provider'              => 'google',
 
     /*
     |--------------------------------------------------------------------------
@@ -227,7 +227,7 @@ return [
     |    "skin-red", "skin-red-light", "skin-black", "skin-black-light".
     |
     */
-    'skin' => 'skin-blue-light',
+    'skin'                      => 'skin-blue-light',
 
     /*
     |--------------------------------------------------------------------------
@@ -241,7 +241,7 @@ return [
     | "sidebar-mini".
     |
     */
-    'layout' => ['sidebar-mini', 'sidebar-collapse'],
+    'layout'                    => ['sidebar-mini', 'sidebar-collapse'],
 
     /*
     |--------------------------------------------------------------------------
@@ -251,7 +251,7 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => '',
+    'login_background_image'    => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -262,7 +262,7 @@ return [
     | each page
     |
     */
-    'show_version' => true,
+    'show_version'              => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -272,7 +272,7 @@ return [
     | Whether to display the environment at the footer of each page
     |
     */
-    'show_environment' => true,
+    'show_environment'          => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -281,7 +281,7 @@ return [
     |
     | whether enable menu bind to a permission
     */
-    'menu_bind_permission' => true,
+    'menu_bind_permission'      => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -300,7 +300,7 @@ return [
     | When you use command `php artisan admin:extend` to generate extensions,
     | the extension files will be generated in this directory.
     */
-    'extension_dir' => app_path('Admin/Extensions'),
+    'extension_dir'             => app_path('Admin/Extensions'),
 
     /*
     |--------------------------------------------------------------------------
@@ -311,7 +311,74 @@ return [
     | https://github.com/laravel-admin-extensions.
     |
     */
-    'extensions' => [
-
+    'extensions'                => [
+        'media-manager'    => [
+            // Select a local disk that you configured in `config/filesystem.php`
+            'disk' => 'public',
+        ],
+        'env-manager'      => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true,
+        ],
+        'clike-editor'     => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+            // 编辑器的配置
+            'config' => [
+            ],
+        ],
+        'api-tester'       => [
+            // route prefix for APIs
+            'prefix'         => 'api',
+            // auth guard for api
+            'guard'          => 'api',
+            // If you are not using the default user model as the authentication model, set it up
+            'user_retriever' => function ($id) {
+                return \App\User::find($id);
+            },
+        ],
+        'china-distpicker' => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+        ],
+        'cropper'          => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+        ],
+        'star-rating'      => [
+            // set to false if you want to disable this extension
+            'enable' => true,
+            // configuration
+            'config' => [
+                'min' => 1, 'max' => 5, 'step' => 1, 'size' => 'xs',
+            ],
+        ],
+        'composer-viewer'  => [
+            // Set this to false if you want to disable this extension
+            'enable' => true,
+        ],
+        'configx'          => [
+            'config' => [
+                'tabs' => [
+                    'base'   => '基本设置',
+                    'seo'    => 'SEO设置',
+                    'uplaod' => '上传设置',
+                ],
+            ],
+        ],
+        'wang-editor'      => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+            // 编辑器的配置
+            'config' => [
+            ],
+        ],
+        'daterangepicker'  => [
+            // Set to `false` if you want to disable this extension
+            'enable' => true,
+            // Find more configurations http://www.daterangepicker.com/
+            'config' => [
+            ],
+        ],
     ],
 ];

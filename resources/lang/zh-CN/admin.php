@@ -98,5 +98,41 @@ return [
         'filter_clear'       => '显示全部',
         'filter_placeholder' => '过滤',
     ],
-    'menu_titles' => [],
+    'menu_titles'           => [],
+
+
+    //configx配置
+    'configx'               => [
+        'new_config_type'    => '新配置类型',
+        'new_config_key'     => '新配置key',
+        'new_config_element' => '新配置表单元素',
+        'new_config_options' => '新配置表扩展项',
+        'header'             => '网站设置',
+        'desc'               => ' ',
+        'element'            => [
+            'normal'         => '默认',
+            'date'           => '日期',
+            'time'           => '时间',
+            'datetime'       => '日期时间',
+            'image'          => '图片',
+            'yes_or_no'      => '是或否',
+            'editor'         => '编辑器',
+            'radio_group'    => '单选框组',
+            'checkbox_group' => '多选框组',
+            'number'         => '数字',
+            'rate'           => '比例',
+            'select'         => '下拉框',
+        ],
+        'base'               => [
+            'logo'=>'Logo图片'
+        ],
+        'shop'               => [
+
+        ],
+        'uplaod'             => [
+
+        ],
+    ],
+    'yes'                   => '是',
+    'no'                    => '否',
 ];
