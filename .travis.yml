@@ -24,7 +24,6 @@ service:
 
 install:
   - cp .env.example .env
-
   - travis_retry composer install --no-interaction --no-suggest
   - php artisan key:generate --ansi
   - php artisan vendor:publish --all --force
